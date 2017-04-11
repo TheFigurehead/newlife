@@ -636,7 +636,7 @@ ul, li, form{
 
 #footer .footer_content_wrapper .footer_content_col.back_form form .submit_wrapper input{
   display: block;
-  padding: 10px;
+ /*  padding: 10px;sss */ 
   background-color: #FF5951;
   border: unset;
   border-radius: 20px;
