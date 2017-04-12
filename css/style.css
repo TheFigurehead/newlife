@@ -269,7 +269,8 @@ ul, li, form{
   margin: 30px 0 40px 0;
 }
 
-#main .why_new_life_title_block .coral_text{
+#main .why_new_life_title_block .coral_text,
+#main .course-description-block .coral_text{
   color: #ff5048;
   font-weight: 700;
 }
@@ -374,6 +375,208 @@ ul, li, form{
   top: 50%;
   transform: translateY(-50%);
 }
+
+#main .page-title-block-wrapper {
+  position: relative;
+}
+
+#main .page-title-block {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)  
+}
+
+#main .page-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;  
+}
+
+#main .page-breadcrumb {
+  text-align: center;
+}
+
+#main .page-breadcrumb li {
+    display: inline-block;
+    /* margin-right: 5px; */
+}
+
+#main .page-breadcrumb-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#main .page-breadcrumb-list li.current-item {
+  color: #f35f57;
+}
+
+#main .page-breadcrumb-list li i.fa-angle-right {
+  color: #d44b31;
+  margin: 0 5px 0 10px;
+}
+
+#main .page-breadcrumb-list li.current-item:last-child {
+  margin: 0;
+}
+
+#main .page-title-block-image-wrapper {
+  height: 285px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.98);  
+}
+
+#main .page-title-block-image-wrapper > img {
+  opacity: 0.5;
+}
+
+#main .page-title-block-image-wrapper-none-shadow {
+  height: 285px;
+  overflow: hidden;  
+}
+
+#main .page-title-block-image-wrapper-none-shadow img {
+  width: 100%;
+  height: 100%;
+}
+
+
+#main .course-content-wrapper {
+  padding: 50px 0 50px 0;
+}
+
+#main .course-description-block {
+  font-family: "PF Din Text Pro";
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#main .course-item-list,
+#main .language-item-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+
+
+
+#main .course-item {
+  /* max-width: 550px; */
+  border: 1px solid #c2c2c2;
+  text-align: center;
+  margin-bottom: 25px;
+  /* flex-basis: 555px; */
+  flex: 0 1 552px;
+  flex-direction: column;
+  margin: 0px 0px 25px 30px;
+}
+
+#main .course-item:nth-child(odd) {
+  /* margin: 0 0 25px; */
+  margin-left: 0;
+}
+
+#main .course-item-image img {
+  width: 100%;
+  height: 375px;
+}
+
+#main .course-item-description div {
+  padding: 20px;
+}
+
+#main .course-item-description div:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#main .course-item-description div.course-item-start {
+  color: #ffffff;
+  background: #636363;
+}
+
+#main .course-item-description div.course-item-start.active {
+  background: #ff544b;
+}
+
+#main .course-item-description .course-value {
+  font-weight: bold;
+}
+
+#main .course-item-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#main .course-item-name::before {
+  display: block;
+  content: '';
+  border: 2px solid #ff5048;
+  margin: auto;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+#main .course-item-list-info {
+  padding: 20px;
+  background: #ff544b;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+#main .language-item-list {
+  padding: 30px 0 0 0;
+}
+
+#main .language-item {
+  /* max-width: 550px; */
+  border: 1px solid #c2c2c2;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /* flex-basis: 555px; */
+  flex: 0 1 250px;
+  flex-direction: column;
+  //margin: 0px 0px 25px 30px;
+}
+
+#main .language-item-image img {
+  width: 100%;
+  height: 180px;
+}
+
+#main .language-item-description {
+   padding: 30px;
+}
+
+#main .language-item-item-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#main .language-item-item-name::before {
+  display: block;
+  content: '';
+  border: 2px solid #ff5048;
+  // margin: auto;
+  width: 30px;
+  margin-bottom: 10px; 
+}
+/* #main .course-content {
+  padding: 50px 0;
+} */
 
 #main .main_desription_content img{
   float: right;
@@ -636,7 +839,11 @@ ul, li, form{
 
 #footer .footer_content_wrapper .footer_content_col.back_form form .submit_wrapper input{
   display: block;
+
+
+
  /*  padding: 10px; */
+
   background-color: #FF5951;
   border: unset;
   border-radius: 20px;
@@ -731,3 +938,9 @@ ul, li, form{
 }
 
 /*Footer ends*/
+
+@media (max-width: 1300px) {
+  #main .course-item {
+    margin-left: 0;
+  }
+}
