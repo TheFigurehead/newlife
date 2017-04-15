@@ -1052,6 +1052,14 @@ ul, li, form{
 
 #footer .footer_content_wrapper .footer_content_col.back_form form .submit_wrapper input{
   display: block;
+<<<<<<< HEAD
+=======
+
+
+
+ /*  padding: 10px; */
+
+>>>>>>> be9ec8c4d316e705abcc080fceda2715f62a5d12
   background-color: #FF5951;
   border: unset;
   border-radius: 20px;
