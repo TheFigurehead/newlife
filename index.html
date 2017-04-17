@@ -407,7 +407,8 @@
       infinite: true,
       slidesToShow: 1,
       respondTo: 'slider',
-      arrows: false
+      arrows: false,
+      adaptiveHeight: true
     });
     $(".main_carousel_list").slick({
       dots: false,
@@ -415,6 +416,21 @@
       slidesToScroll: 1,
       respondTo: 'slider',
       arrows: false,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+
+        ]      
       // centerMode: true
     });
     $('.main_carousel_nav_item.prev').click(function(){
