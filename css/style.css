@@ -93,6 +93,7 @@ ul, li, form{
 
 #nav ul{
   text-align: center;
+  font-size: 0;
 }
 
 #nav ul li{
@@ -115,7 +116,8 @@ ul, li, form{
   border-right: 1px solid #fff;
   display: inline-block;
 /*   padding: 0 10px; */
-   padding: 0 25px; 
+   padding: 0 25px;
+   font-size: 16px;
 }
 
 #nav ul li:last-child a{
@@ -195,7 +197,7 @@ width: 120px;
   bottom: 0;
   align-items: center;
   right: calc(-100% + 6px);
-  background-color: #fdfdfd;  
+  background-color: #fdfdfd;
 } */
 
 
@@ -482,7 +484,7 @@ width: 120px;
 
  #main .why_new_life_item:hover .why_new_life_item_title::before {
   border: 2px solid #ffffff;
-} 
+}
 
 #main .why_new_life_item .why_new_life_item_content_text{
   opacity: 0;
@@ -1481,18 +1483,15 @@ flex: 1 0 200px;
 #main .slider-item-desc {
   position: absolute;
   text-align: right;
-  // display: inline-block;
-  // z-index: 10;
-  // top: 50%;
-  // left: 50%;
-    // left: 0;
   right: 22%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #main .slider-item-caption {
   font-family: "PF Din Text Pro";
   text-transform: uppercase;
-  font-weight: 800; 
+  font-weight: 800;
 }
 
 #main .slider-item-caption .normal-text {
@@ -1523,12 +1522,12 @@ flex: 1 0 200px;
   font-size: 50px;
   /* color: #ff5047; */
   font-weight: 800;
-  margin-right: 5px;  
+  margin-right: 5px;
 }
 
 #main .count-caption {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 #main .count-caption .name {
@@ -1540,7 +1539,7 @@ flex: 1 0 200px;
 #main .count-image img {
   margin-left: 10px;
   display: inline-block;
-  width: initial;  
+  width: initial;
 }
 
 #main .slider-item-image {
@@ -1565,7 +1564,7 @@ flex: 1 0 200px;
 #main .slider-item-price {
   font-weight: 800;
   font-size: 14px;
-  padding: 10px 0;  
+  padding: 10px 0;
 }
 
 #main .slider-item-submit input {
@@ -1600,7 +1599,7 @@ flex: 1 0 200px;
     transition: height 1.2s linear;
     height: 100%;
     left: 0;
-    right: 0; 
+    right: 0;
     padding-top: 25px;
   }
 
@@ -1654,7 +1653,7 @@ flex: 1 0 200px;
     left: 15%;
     top: 18px;
     position: absolute;
-  }  
+  }
 
   #main .why_new_life_item:nth-last-child(2) .why_new_life_item_content_text::before,
   #main .why_new_life_item:last-child .why_new_life_item_content_text::before {
@@ -1662,14 +1661,14 @@ flex: 1 0 200px;
     border-bottom: 1px solid rgb(236, 243, 234);
 
   }
-    
+
   #main .slick-dots {
     bottom: -25px;
   }
 
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
 
   #main .main_carousel_nav {
     display: none;
@@ -1716,7 +1715,7 @@ flex: 1 0 200px;
     border-right: unset;
 
   }
-  
+
   .container {
     width: 100%;
   }
@@ -1770,7 +1769,7 @@ flex: 1 0 200px;
   }
 
   #main .count-students {
-    font-size: 28px;  
+    font-size: 28px;
   }
 
   #main .count-caption {
@@ -1817,8 +1816,8 @@ flex: 1 0 200px;
   #main .student_benefits_wrapper_inside {
     padding: 0 65px;
 /*     text-align: center; */
-    transform: unset;  
-    position: initial;  
+    transform: unset;
+    position: initial;
   }
 
   #main .main_desription_fullwidth_content {
@@ -1826,20 +1825,20 @@ flex: 1 0 200px;
   }
 
   #main .main_desription_fullwidth_content h2 {
-    text-align: center; 
+    text-align: center;
   }
 
   #main .student_benefits_block_title {
-    margin-bottom: 30px;    
+    margin-bottom: 30px;
   }
 
   #main .student_benefits_block_title .white_text {
-    color: #ff5048;   
+    color: #ff5048;
   }
 
   #main .student_benefits_block_content {
-    margin-left: 0; 
-    text-align: justify;     
+    margin-left: 0;
+    text-align: justify;
   }
 
   #main .student_benefits_block_content {
@@ -1860,19 +1859,19 @@ flex: 1 0 200px;
     width: 18px;
     height: 18px;
     position: absolute;
-    left: -30px;    
+    left: -30px;
   }
 
 }
 
 @media (max-width: 768px) { /* Ã‘â‚¬ÃÂ°ÃÂ·Ã‘â‚¬ÃÂµÃ‘Ë†ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘ÂÃÂ¼ÃÂ°Ã‘â‚¬Ã‘â€šÃ‘â€žÃÂ¾ÃÂ½ÃÂ° */
- 
+
   #header .header-container {
     padding: 0;
   }
 
   #main .slick-dots {
-    bottom: -25px; 
+    bottom: -25px;
   }
 
   #main .new_life_benefits_background {
@@ -1902,7 +1901,7 @@ flex: 1 0 200px;
     color: #fff;
     padding: 20px 0;
   }
- 
+
   #header .header-numbers-wrapper {
     margin: 0 auto;
     /* padding-bottom: 20px; */
@@ -1910,7 +1909,7 @@ flex: 1 0 200px;
 
   #header .header-numbers-icon  {
     background-color: #ffffff;
-    color: #ff5951;    
+    color: #ff5951;
   }
 
   #header .logo-wrapper {
@@ -1962,7 +1961,7 @@ flex: 1 0 200px;
 
   #footer .footer_content_col_content.contacts_content {
       display: flex;
-      justify-content: space-between; 
+      justify-content: space-between;
   }
 
 
@@ -1978,13 +1977,13 @@ flex: 1 0 200px;
   #main .why_new_life_item:nth-last-child(2) .why_new_life_item_content_text::before {
     border-top: 1px solid rgb(236, 243, 234);
     border-bottom: none;
-  } 
+  }
 
   #main .why_new_life_item:nth-last-child(2) .why_new_life_item_content {
     top: 100% !important;
     height: 0;
-  } 
- 
+  }
+
 /* БАННЕР */
 
 
@@ -2014,7 +2013,7 @@ flex: 1 0 200px;
   }
 
   #main .count-students {
-    font-size: 28px;  
+    font-size: 28px;
   }
 
   #main .count-caption {
@@ -2034,7 +2033,7 @@ flex: 1 0 200px;
       display: flex;
       margin-top: 5px;
       flex-direction: row;
-      justify-content: space-around; 
+      justify-content: space-around;
   }
 
   #main .slider-item-language .language-name {
@@ -2406,10 +2405,10 @@ body{
     -ms-flex: 1;
         flex: 1; */
 
-  text-transform: uppercase;     
+  text-transform: uppercase;
 }
 
-  
+
 /* .card-element .card-title{
   text-align: center;
   font-size: 14px;
@@ -2475,7 +2474,7 @@ body{
 
 .card-more {
   background-color: rgba(255, 92, 85, 0.97);
-  text-align: center;  
+  text-align: center;
 }
 
 .card-more a {
