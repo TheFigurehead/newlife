@@ -9,11 +9,18 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.css">
+
 </head>
 <body>
 <header id="header">
   <div class="container header-container">
     <div class="header-wrapper">
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
       <div class="logo-wrapper">
         <div class="logo">
           <img src="img/header-logo.png" alt="logo">
@@ -33,7 +40,6 @@
           <div class="header-numbers-item">+38(048)273-34-43</div>
           <div class="header-numbers-item">+38(048)273-34-43</div>          
         </div>
-
       </div>
     </div>
   </div>
@@ -121,18 +127,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -159,18 +167,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -197,18 +207,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -416,7 +428,17 @@
     <div class="container">
       <div class="video_wrapper">
         <div class="main_video_block">
-          <img src="img/video_photo.png" alt="">
+          <div class="preview-img-wrapper">
+            <div class="preview-img">
+              <img src="img/video_photo1.png" alt="">
+            </div>
+            <div class="video-btn-start">
+              <img src="img/youtube-play.png" alt="">
+            </div>
+          </div>
+          <div class="main_video" id="main_video">
+           <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/nznYVohmdsE" frameborder="0" allowfullscreen></iframe>  -->          
+          </div>
         </div>
         <div class="main_video_desc">
           <div class="main_video_desc_block">
@@ -437,31 +459,41 @@
       <div class="main_carousel_list">
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
@@ -544,7 +576,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>     
         <div class="footer_content_col back_form">
           <div class="footer_content_col_content">
             <form class="" action="index.html" method="post">
@@ -694,6 +726,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/touchSwipe.min.js"></script>
 <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.js"></script>
+
 <script src="js/script.js"></script>
 <script type="text/javascript">
   $(document).on('ready', function() {
@@ -750,7 +784,7 @@
 <script>
   $(document).on('ready', function() {    
 
-    $("body").swipe( {
+    $("body").swipe({
 
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         if(direction == "right"){
@@ -765,7 +799,85 @@
 
        threshold:0
     });
+
+    $(".mobile-menu-wrapper").on('click', function() {
+        $("#nav").animate({ "left": "0" }, "slow" ).addClass("active");
+        $(".media-wrapper").addClass("dark");        
+    });
+
+        
+    $("body").mouseup(function (e) { // событие клика по веб-документу
+        var div = $('#nav'); // тут указываем класс элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            div.animate({ "left": "-50%" }, "slow" ).removeClass("active");
+            $(".media-wrapper").removeClass("dark");
+        }
+    });
+
+
+    //LightBOX
+    baguetteBox.run('.main_carousel_img', {
+        captions: false,
+        animation: 'fadeIn'
+    });
+
+
+    //YOUTUBE 
+
+    $(".preview-img-wrapper").on('click', function() {
+       $(this).hide();      
+
+    });
+
+
+
+
   });
+</script>
+<script>
+  // 1. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 2. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('main_video', {
+          height: '315',
+          width: '560',
+          playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    vq: 'hd1080'},
+          videoId: 'nznYVohmdsE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 3. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        player.mute();
+      }
+
+      var done = false;
+      function onPlayerStateChange(event) {
+        
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
 </script>
 </body>
 </html>

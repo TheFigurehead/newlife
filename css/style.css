@@ -25,6 +25,9 @@ ul, li, form{
   padding: 0 20px;
 }
 
+#header .mobile-menu-wrapper {
+  display: none;
+}
 
 #header .logo-wrapper,
 #header .header-numbers-wrapper{
@@ -1134,6 +1137,26 @@ width: 120px;
   width: 100%;
 }
 
+#main .preview-img-wrapper {
+  position: absolute;
+  width: 560px;
+  height: 315px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+#main .preview-img {
+    position: absolute;
+    width: 560px;
+    height: 315px;
+    display: flex;
+}
+
+#main .video-btn-start {
+  position: absolute;
+}
+
 #main .main_video_desc{
   flex: 3 0 300px;
   justify-content: center;
@@ -1518,6 +1541,11 @@ flex: 1 0 200px;
   text-align: left;
 }
 
+#main .count-students-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 #main .count-students {
   font-size: 50px;
   /* color: #ff5047; */
@@ -1662,10 +1690,10 @@ flex: 1 0 200px;
 
   }
 
-  #main .slick-dots {
-    bottom: -25px;
-  }
-
+/*   #main .slick-dots {
+  bottom: -25px;
+}
+ */
 }
 
 @media (max-width: 1024px) {
@@ -1744,66 +1772,66 @@ flex: 1 0 200px;
     flex-wrap: wrap;
   }
 
-  #main .slider-item-caption {
-    text-align: center;
-  }
+ /*  #main .slider-item-caption {
+   text-align: center;
+ } */
 
-  #main .slider-item-desc {
-      right: 0;
-      left: 0;
-  }
+  // #main .slider-item-desc {
+  //     right: 0;
+  //     left: 0;
+  // }
 
-  #main .slider-item-caption .normal-text {
-    font-size: 30px;
-  }
+/*   #main .slider-item-caption .normal-text {
+  font-size: 30px;
+} */
 
-  #main .slider-item-caption .coral_text {
-    font-size: 25px;
-  }
+/*   #main .slider-item-caption .coral_text {
+  font-size: 25px;
+} */
 
-  #main .slider-item-count-students {
-    justify-content: center;
-    margin: 10px;
-    display: flex;
+/*   #main .slider-item-count-students {
+  justify-content: center;
+  margin: 10px;
+  display: flex;
 
-  }
+} */
 
-  #main .count-students {
-    font-size: 28px;
-  }
+/*   #main .count-students {
+  font-size: 28px;
+} */
 
-  #main .count-caption {
-    display: block;
-  }
+/*   #main .count-caption {
+  display: block;
+} */
 
-  #main .count-image img {
-    margin-left: 26px;
-    display: inline-block;
-    width: initial;
-    height: 40px;
-  }
+/*   #main .count-image img {
+  margin-left: 26px;
+  display: inline-block;
+  width: initial;
+  height: 40px;
+} */
 
-  #main .slider-item-language {
-    text-align: center;
-  }
+/*   #main .slider-item-language {
+  text-align: center;
+} */
 
-  #main .slider-item-language .language-name {
-    padding-bottom: 0;
-  }
+/*   #main .slider-item-language .language-name {
+  padding-bottom: 0;
+} */
 
-  #main .slider-item-price {
-    text-align: center;
-  }
+  // #main .slider-item-price {
+  //   text-align: center;
+  // }
 
-  #main .slider-item-submit {
-    display: flex;
-    justify-content: center;
-  }
+  // #main .slider-item-submit {
+  //   display: flex;
+  //   justify-content: center;
+  // }
 
-  #main .slider-item-submit input {
-    height: 35px;
-    font-size: 13px;
-  }
+  // #main .slider-item-submit input {
+  //   height: 35px;
+  //   font-size: 13px;
+  // }
 
   /* КОНЕЦ БАННЕРА */
 
@@ -1862,16 +1890,113 @@ flex: 1 0 200px;
     left: -30px;
   }
 
+/* БАННЕР */
+
+  .lang-menu { 
+    display: none;
+  }
+  .slick-list { 
+    height: 630px !important;
+  }
+
+  #main .slider img {
+    width: auto;
+    margin-left: 5px;
+  }
+
+  #main .slider-item-image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
+  #main .slider-item-caption {
+    text-align: center;
+  }
+
+  #main .slider-item-desc {
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main .slider-item-caption .normal-text {
+    font-size: 35px;
+    line-height: 0.8;
+  }
+
+  #main .slider-item-caption .coral_text {
+      font-size: 24px;
+  }  
+  
+  #main .slider-item-count-students {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  #main .count-image img {
+      height: 45px;
+  }
+
+  #main .count-students {
+    font-size: 70px;
+  }
+
+  #main .count-caption {
+    font-size: 20px;
+  }
+
+  #main .slider-item-language {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #main .slider-item-language .language-name {
+      padding-bottom: 0;
+  }
+
+
+  #main .slider-item-price {
+    font-size: 20px;
+    /* text-align: center; */
+  }
+
+  #main .slider-item-submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main .slider-item-submit input {
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 15px;      
+  }
+
+
+  #main .count-image .none-active-student {
+    display: none;
+  }
+
 }
 
 @media (max-width: 768px) { /* Ã‘â‚¬ÃÂ°ÃÂ·Ã‘â‚¬ÃÂµÃ‘Ë†ÃÂµÃÂ½ÃÂ¸ÃÂµ Ã‘ÂÃÂ¼ÃÂ°Ã‘â‚¬Ã‘â€šÃ‘â€žÃÂ¾ÃÂ½ÃÂ° */
+
+  #main .new_life_benefits_title_wrapper {
+    margin-top: 0;
+  }
 
   #header .header-container {
     padding: 0;
   }
 
   #main .slick-dots {
-    bottom: -25px;
+    bottom: 40px;
   }
 
   #main .new_life_benefits_background {
@@ -1897,13 +2022,50 @@ flex: 1 0 200px;
   }
 
   #header .header-wrapper {
-    background-color: #ff5951;
+    background-color: #fff;
+    color: #000;
+    line-height: 1;
+    padding: 0;
+  }
+
+  #header .mobile-menu-wrapper {
+    display: block;
+    cursor: pointer;
+  }
+
+  #header .mobile-menu {
+    padding: 15px 25px;
+    background: #ff5c53;
     color: #fff;
-    padding: 20px 0;
+    font-size: 45px;
+  }
+
+  #header .logo-wrapper {
+    justify-content: center;
+    display: flex;    
+    flex: 1;
+  }
+
+  #header .logo img {
+    height: 45px;
+  }
+
+  #header .logo-content {
+    align-self: center;
+    margin-left: 10px;
+  }
+
+  #header .logo-content .logo-title {
+    font-size: 25px !important;
+  }
+
+  #header .logo-content .logo-subtitle {
+    font-size: 14px !important;
   }
 
   #header .header-numbers-wrapper {
     margin: 0 auto;
+    display: none;
     /* padding-bottom: 20px; */
   }
 
@@ -1912,11 +2074,12 @@ flex: 1 0 200px;
     color: #ff5951;
   }
 
-  #header .logo-wrapper {
-    margin: 0 auto;
-    padding-bottom: 10px;
-    text-align: center;
-  }
+
+/*   #header .logo-wrapper {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+} */
 
   #footer .footer_content_wrapper .footer_content {
       display: -webkit-box;
@@ -1984,80 +2147,79 @@ flex: 1 0 200px;
     height: 0;
   }
 
-/* БАННЕР */
 
 
-  #main .slider-item-caption {
-    text-align: center;
-  }
+/*   #main .slider-item-caption {
+  text-align: center;
+}
 
-  #main .slider-item-desc {
-    right: 0;
-    left: 0;
-  }
+#main .slider-item-desc {
+  right: 0;
+  left: 0;
+}
 
-  #main .slider-item-caption .normal-text {
-    font-size: 15px;
-  }
+#main .slider-item-caption .normal-text {
+  font-size: 15px;
+}
 
-  #main .slider-item-caption .coral_text {
-    font-size: 18px;
-  }
+#main .slider-item-caption .coral_text {
+  font-size: 18px;
+}
 
-  #main .slider-item-count-students {
-    justify-content: center;
-    padding: 0;
-    flex-wrap: wrap;
-    margin: 0;
-    border: 0;
-  }
+#main .slider-item-count-students {
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0;
+  border: 0;
+}
 
-  #main .count-students {
-    font-size: 28px;
-  }
+#main .count-students {
+  font-size: 28px;
+}
 
-  #main .count-caption {
-    display: block;
-  }
+#main .count-caption {
+  display: block;
+}
 
-  #main .count-image img {
-    margin-left: 26px;
-    display: inline-block;
-    width: initial;
-    height: 40px;
-  }
+#main .count-image img {
+  margin-left: 26px;
+  display: inline-block;
+  width: initial;
+  height: 40px;
+}
 
-  #main .slider-item-language {
-      font-size: 12px;
-      font-weight: 800;
-      display: flex;
-      margin-top: 5px;
-      flex-direction: row;
-      justify-content: space-around;
-  }
-
-  #main .slider-item-language .language-name {
-    padding-bottom: 0;
-  }
-
-  #main .slider-item-price {
-      padding: 5px 0;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      text-align: center;
-  }
-
-  #main .slider-item-submit {
+#main .slider-item-language {
+    font-size: 12px;
+    font-weight: 800;
     display: flex;
-    justify-content: center;
-  }
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-  #main .slider-item-submit input {
-    margin: 0;
-    height: 35px;
-    font-size: 13px;
-  }
+#main .slider-item-language .language-name {
+  padding-bottom: 0;
+}
+
+#main .slider-item-price {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#main .slider-item-submit {
+  display: flex;
+  justify-content: center;
+}
+
+#main .slider-item-submit input {
+  margin: 0;
+  height: 35px;
+  font-size: 13px;
+} */
 
   /* КОНЕЦ БАННЕРА */
 
