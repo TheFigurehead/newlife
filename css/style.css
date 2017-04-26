@@ -1131,6 +1131,11 @@ width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+#main .main_video {
+  position: relative;
 }
 
 #main .main_video_block img {
@@ -1139,23 +1144,32 @@ width: 120px;
 
 #main .preview-img-wrapper {
   position: absolute;
-  width: 560px;
   height: 315px;
-  display: flex;
-  align-items: center;
-  justify-content: center;  
+  width: 560px;
+  top: 0;
 }
 
-#main .preview-img {
-    position: absolute;
-    width: 560px;
-    height: 315px;
-    display: flex;
-}
+/* #main .preview-img img {
+  height: 315px;
+  width: 560px;
+} */
+
 
 #main .video-btn-start {
   position: absolute;
+  display: inline-block;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+#main .video-btn-start img {
+  width: 100px;
+  height: 100px;
+}
+
+
 
 #main .main_video_desc{
   flex: 3 0 300px;
@@ -1694,6 +1708,105 @@ flex: 1 0 200px;
   bottom: -25px;
 }
  */
+
+/* БАННЕР */
+
+  .lang-menu { 
+    display: none;
+  }
+  .slick-list {
+    /* height: 630px !important; */
+  }
+
+  #main .slider img {
+    width: auto;
+    margin-left: 5px;
+  }
+
+  #main .slider-item-image {
+    overflow: hidden;
+    width: 100%;
+    /* height: 100%; */
+    height: 630px;
+  }
+
+  #main .slider-item-caption {
+    text-align: center;
+  }
+
+  #main .slider-item-desc {
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main .slider-item-caption .normal-text {
+    font-size: 35px;
+    line-height: 0.8;
+  }
+
+  #main .slider-item-caption .coral_text {
+      font-size: 24px;
+  }  
+  
+  #main .slider-item-count-students {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  #main .count-image img {
+      height: 45px;
+  }
+
+  #main .count-students {
+    font-size: 70px;
+  }
+
+  #main .count-caption {
+    font-size: 20px;
+  }
+
+  #main .slider-item-language {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #main .slider-item-language .language-name {
+      padding-bottom: 0;
+  }
+
+
+  #main .slider-item-price {
+    font-size: 20px;
+    /* text-align: center; */
+  }
+
+  #main .slider-item-submit {
+    display: flex;
+    justify-content: center;
+  }
+
+  #main .slider-item-submit input {
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 15px;      
+  }
+
+
+  #main .count-image .none-active-student {
+    display: none;
+  }
+
+ /* КОНЕЦ БАННЕРА */
+
+
+
 }
 
 @media (max-width: 1024px) {
@@ -1890,98 +2003,7 @@ flex: 1 0 200px;
     left: -30px;
   }
 
-/* БАННЕР */
 
-  .lang-menu { 
-    display: none;
-  }
-  .slick-list { 
-    height: 630px !important;
-  }
-
-  #main .slider img {
-    width: auto;
-    margin-left: 5px;
-  }
-
-  #main .slider-item-image {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-
-  #main .slider-item-caption {
-    text-align: center;
-  }
-
-  #main .slider-item-desc {
-    right: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #main .slider-item-caption .normal-text {
-    font-size: 35px;
-    line-height: 0.8;
-  }
-
-  #main .slider-item-caption .coral_text {
-      font-size: 24px;
-  }  
-  
-  #main .slider-item-count-students {
-    flex-direction: column;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-
-  #main .count-image img {
-      height: 45px;
-  }
-
-  #main .count-students {
-    font-size: 70px;
-  }
-
-  #main .count-caption {
-    font-size: 20px;
-  }
-
-  #main .slider-item-language {
-    margin-top: 15px;
-    text-align: center;
-  }
-
-  #main .slider-item-language .language-name {
-      padding-bottom: 0;
-  }
-
-
-  #main .slider-item-price {
-    font-size: 20px;
-    /* text-align: center; */
-  }
-
-  #main .slider-item-submit {
-    display: flex;
-    justify-content: center;
-  }
-
-  #main .slider-item-submit input {
-    height: 50px;
-    font-size: 15px;
-    margin-bottom: 0;
-    margin-top: 15px;      
-  }
-
-
-  #main .count-image .none-active-student {
-    display: none;
-  }
 
 }
 

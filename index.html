@@ -427,18 +427,21 @@
   <div class="main_video_wrapper">
     <div class="container">
       <div class="video_wrapper">
-        <div class="main_video_block">
-          <div class="preview-img-wrapper">
-            <div class="preview-img">
-              <img src="img/video_photo1.png" alt="">
-            </div>
-            <div class="video-btn-start">
-              <img src="img/youtube-play.png" alt="">
-            </div>
-          </div>
-          <div class="main_video" id="main_video">
-           <!--  <iframe width="560" height="315" src="https://www.youtube.com/embed/nznYVohmdsE" frameborder="0" allowfullscreen></iframe>  -->          
-          </div>
+       <div class="main_video_block">
+          <div class="main_video">
+             <div id="main_video"></div> 
+            <div class="preview-img-wrapper">
+              <div class="container-img-wrapper">
+                 <div class="video-btn-start">
+                  <img src="img/youtube-play.png" alt="">
+                </div>             
+                <div class="preview-img">
+                  <img src="https://img.youtube.com/vi/zzsTP4fEQHA/maxresdefault.jpg" alt="">
+                  
+                </div>
+              </div> 
+            </div>                  
+          </div>        
         </div>
         <div class="main_video_desc">
           <div class="main_video_desc_block">
@@ -817,7 +820,7 @@
 
 
     //LightBOX
-    baguetteBox.run('.main_carousel_img', {
+    baguetteBox.run('.main_carousel_list', {
         captions: false,
         animation: 'fadeIn'
     });
@@ -851,33 +854,46 @@
           height: '315',
           width: '560',
           playerVars: {
-                    autoplay: 1,
+                    autoplay: 0,
                     loop: 1,
                     controls: 0,
                     showinfo: 0,
                     modestbranding: 1,
-                    vq: 'hd1080'},
-          videoId: 'nznYVohmdsE',
+
+                    rel: 0,
+                    vq: 'hd1080'
+          },
+          videoId: 'zzsTP4fEQHA',
           events: {
-            'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
           }
         });
       }
 
       // 3. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
+/*      function onPlayerReady(event) {
         event.target.playVideo();
         player.mute();
-      }
+      }*/
 
-      var done = false;
+    onPlayerStateChange = function (event) {
+        if (event.data == YT.PlayerState.ENDED) {
+            $('.video-btn-start').fadeIn('normal');
+        }
+    }
+/*      var done = false;
       function onPlayerStateChange(event) {
         
-      }
+      }*/
       function stopVideo() {
         player.stopVideo();
       }
+    $(document).on('click', '.main_video', function () {
+        //$(this).fadeOut('normal');
+        player.playVideo();
+    });
+
+
 </script>
 </body>
 </html>
