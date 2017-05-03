@@ -825,18 +825,16 @@
         animation: 'fadeIn'
     });
 
-
-    //YOUTUBE 
-
-    $(".preview-img-wrapper").on('click', function() {
-       $(this).hide();      
-
-    });
-
   });
 </script>
 <script>
-  
+      //YOUTUBE 
+
+/*      $(".preview-img-wrapper").on('click', function() {
+         $(this).hide();      
+
+      });*/
+
       var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
@@ -855,7 +853,6 @@
                     controls: 0,
                     showinfo: 0,
                     modestbranding: 1,
-
                     rel: 0,
                     vq: 'hd1080'
           },
@@ -868,9 +865,14 @@
       }
 
     onPlayerStateChange = function (event) {
-        if (event.data == YT.PlayerState.ENDED) {
-            $('.video-btn-start').fadeIn('normal');
+        if (event.data == YT.PlayerState.PLAYING) {
+          // YT.PlayerState.ENDED
+            $('.preview-img-wrapper').fadeOut('normal');
         }
+        if (event.data == YT.PlayerState.PAUSED) {
+            $('.preview-img-wrapper').fadeIn(400);
+        }
+
     }
 
     onPlayerReady = function (event) {
@@ -878,25 +880,11 @@
             player.playVideo();
 
         });
-
-
-
-
     }
 
     function stopVideo() {
       player.stopVideo();
     }
-    // $(document).on('click', '.main_video', function () {
-    //     //$(this).fadeOut('normal');
-    //     player.playVideo();
-    // });
-
-  /*    $('main_video').bind('keypress', function(e) {
-          if(e.keyCode==103){
-             player.stopVideo();
-          }
-      });*/
 
 </script>
 </body>
