@@ -429,7 +429,7 @@
       <div class="video_wrapper">
        <div class="main_video_block">
           <div class="main_video">
-             <div id="main_video"></div> 
+             <div id="main_video" data-video="zzsTP4fEQHA"></div> 
             <div class="preview-img-wrapper">
               <div class="container-img-wrapper">
                  <div class="video-btn-start">
@@ -437,7 +437,6 @@
                 </div>             
                 <div class="preview-img">
                   <img src="https://img.youtube.com/vi/zzsTP4fEQHA/maxresdefault.jpg" alt="">
-                  
                 </div>
               </div> 
             </div>                  
@@ -842,7 +841,8 @@
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
-      var player;
+      var player, 
+      videoid = $("#main_video").attr("data-video");
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('main_video', {
           height: '315',
@@ -856,7 +856,7 @@
                     rel: 0,
                     vq: 'hd1080'
           },
-          videoId: 'zzsTP4fEQHA',
+          videoId: videoid,
           events: {
             'onStateChange': onPlayerStateChange,
             'onReady': onPlayerReady,
