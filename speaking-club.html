@@ -63,7 +63,21 @@
     <div class="speaking-club-video-background">
       <div class="container">
         <div class="speaking-club-video-wrapper">
-          <div class="speaking-club-video"><img src="img/video_photo.png" alt=""></div>
+          <div class="speaking-club-video">
+            <div class="main_video">
+              <div id="main_video" data-video="zzsTP4fEQHA"></div> 
+              <div class="preview-img-wrapper">
+                <div class="container-img-wrapper">
+                   <div class="video-btn-start">
+                    <img src="img/youtube-play.png" alt="">
+                  </div>             
+                  <div class="preview-img">
+                    <img src="https://img.youtube.com/vi/zzsTP4fEQHA/maxresdefault.jpg" alt="">
+                  </div>
+                </div> 
+              </div>                  
+            </div>                    
+          </div>
         </div>
       </div>
     </div>
@@ -353,5 +367,67 @@
     });
   });
 </script>
+<script>
+      //YOUTUBE 
+
+/*      $(".preview-img-wrapper").on('click', function() {
+         $(this).hide();      
+
+      });*/
+
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+      var player, 
+      videoid = $("#main_video").attr("data-video");
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('main_video', {
+          playerVars: {
+                    autoplay: 0,
+                    loop: 1,
+                    controls: 0,
+                    showinfo: 0,
+                    modestbranding: 1,
+                    rel: 0,
+                    vq: 'hd1080'
+          },
+          videoId: videoid,
+          events: {
+            'onStateChange': onPlayerStateChange,
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+
+    onPlayerStateChange = function (event) {
+        if (event.data == YT.PlayerState.PLAYING) {
+            $('.preview-img-wrapper').fadeOut('normal');
+        }
+        if (event.data == YT.PlayerState.PAUSED) {
+            $('.preview-img-wrapper').fadeIn(400);
+        }        
+        if (event.data == YT.PlayerState.ENDED) {
+            $('.preview-img-wrapper').fadeIn(400);
+        }
+
+    }
+
+    onPlayerReady = function (event) {
+        $('.main_video').on('click', function() {
+            player.playVideo();
+
+        });
+    }
+
+    function stopVideo() {
+      player.stopVideo();
+    }
+
+</script>
+
 </body>
 </html>

@@ -427,7 +427,7 @@
   <div class="main_video_wrapper">
     <div class="container">
       <div class="video_wrapper">
-       <div class="main_video_block">
+        <div class="main_video_block">
           <div class="main_video">
              <div id="main_video" data-video="zzsTP4fEQHA"></div> 
             <div class="preview-img-wrapper">
@@ -802,20 +802,24 @@
        threshold:0
     });
 
+
+    //События на мобильный версии при клике на бургер
+
+    $("body").mouseup(function (e) { 
+        var div = $('#nav');
+        if (!div.is(e.target) && div.has(e.target).length === 0 && div.hasClass('active')) {
+          div.animate({ "left": "-50%" }).removeClass("active");
+          $(".media-wrapper").removeClass("dark");
+        }
+    });
+
     $(".mobile-menu-wrapper").on('click', function() {
-        $("#nav").animate({ "left": "0" }, "slow" ).addClass("active");
+        $("#nav").animate({ "left": "0" }).addClass("active");
         $(".media-wrapper").addClass("dark");        
     });
 
         
-    $("body").mouseup(function (e) { 
-        var div = $('#nav');
-        if (!div.is(e.target) 
-            && div.has(e.target).length === 0) {
-            div.animate({ "left": "-50%" }, "slow" ).removeClass("active");
-            $(".media-wrapper").removeClass("dark");
-        }
-    });
+
 
 
     //LightBOX
@@ -845,8 +849,6 @@
       videoid = $("#main_video").attr("data-video");
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('main_video', {
-          height: '315',
-          width: '560',
           playerVars: {
                     autoplay: 0,
                     loop: 1,
@@ -872,7 +874,9 @@
         if (event.data == YT.PlayerState.PAUSED) {
             $('.preview-img-wrapper').fadeIn(400);
         }
-
+        if (event.data == YT.PlayerState.ENDED) {
+            $('.preview-img-wrapper').fadeIn(400);
+        }
     }
 
     onPlayerReady = function (event) {
