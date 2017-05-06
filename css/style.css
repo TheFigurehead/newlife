@@ -16,6 +16,7 @@ ul, li, form{
 }*/
 /*Container ends*/
 
+
 #header .header-wrapper{
   overflow: hidden;
   display: flex;
@@ -1867,37 +1868,7 @@ flex: 1 0 200px;
     top: 0;
   }
 
-  #nav{
-    background-color: #FF5C53;
-    position: fixed;
-    height: 100%;
-    width: 50%;
-    z-index: 2000;
-    top: 0;
-    left: -50%;
-  }
-  #nav.active{
-    right: 50%;
-    left: 0;
-  }
 
-  #nav ul li {
-    display: block;
-  }
-
-  #nav.active li {
-    transition: all .4s cubic-bezier(0, 0, 0.06, 1.08);
-
-  }
-
-  .main-nav-list li {
-    border-bottom: 1px solid rgba(76, 52, 52, 0.17);
-  }
-
-  #nav ul li a {
-    border-right: unset;
-
-  }
 
   .container {
     width: 100%;
@@ -2050,6 +2021,38 @@ flex: 1 0 200px;
 }
 
 @media (max-width: 768px) { /* Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚Â°ÃƒÂÃ‚Â·Ãƒâ€˜Ã¢â€šÂ¬ÃƒÂÃ‚ÂµÃƒâ€˜Ã‹â€ ÃƒÂÃ‚ÂµÃƒÂÃ‚Â½ÃƒÂÃ‚Â¸ÃƒÂÃ‚Âµ Ãƒâ€˜Ã‚ÂÃƒÂÃ‚Â¼ÃƒÂÃ‚Â°Ãƒâ€˜Ã¢â€šÂ¬Ãƒâ€˜Ã¢â‚¬Å¡Ãƒâ€˜Ã¢â‚¬Å¾ÃƒÂÃ‚Â¾ÃƒÂÃ‚Â½ÃƒÂÃ‚Â° */
+
+  #nav{
+    background-color: #FF5C53;
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    z-index: 2000;
+    top: 0;
+    left: -50%;
+  }
+  #nav.active{
+    right: 50%;
+    left: 0;
+  }
+
+  #nav ul li {
+    display: block;
+  }
+
+  #nav.active li {
+    transition: all .4s cubic-bezier(0, 0, 0.06, 1.08);
+
+  }
+
+  .main-nav-list li {
+    border-bottom: 1px solid rgba(76, 52, 52, 0.17);
+  }
+
+  #nav ul li a {
+    border-right: unset;
+
+  }
 
   #main .new_life_benefits_title_wrapper {
     margin-top: 0;
@@ -2361,6 +2364,23 @@ flex: 1 0 200px;
 .contacts-block-wrapper .contacts-block-wrapper-maps img{
   width: 100%;
   height: 100%;
+}
+
+.contacts-block-wrapper-maps #map,
+.contacts-block-wrapper-maps #map2 {
+  width: 100%;
+  height: 660px;
+}
+
+.contacts-block-wrapper-maps .custom-class-for-label {
+  width: 120px; 
+  border: 1px solid #eb3a44;
+  border-radius: 5px;
+  background: #fee1d7;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #eb3a44;
 }
 
 .contacts-block-wrapper .contacts_content_col_title{
