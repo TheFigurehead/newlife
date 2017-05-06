@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="slick/slick.css">
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.css">
+
 </head>
 <body>
 <header id="header">
   <div class="container header-container">
     <div class="header-wrapper">
+      <div class="mobile-menu-wrapper">
+        <div class="mobile-menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </div>
       <div class="logo-wrapper">
         <div class="logo">
           <img src="img/header-logo.png" alt="logo">
@@ -33,7 +40,6 @@
           <div class="header-numbers-item">+38(048)273-34-43</div>
           <div class="header-numbers-item">+38(048)273-34-43</div>          
         </div>
-
       </div>
     </div>
   </div>
@@ -121,18 +127,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -159,18 +167,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -197,18 +207,20 @@
                   <div class="coral_text">&laquo;Фантастическая четвёрка&raquo;</div>
                 </div>
                 <div class="slider-item-count-students">
-                  <span class="count-students">4</span>
-                  <div class="count-caption">
-                    <span class="name">Студента</span>
-                    <span class="group">в группе</span>
+                  <div class="count-students-wrapper">
+                    <span class="count-students">4</span>
+                    <div class="count-caption">
+                      <span class="name">Студента</span>
+                      <span class="group">в группе</span>
+                    </div>
                   </div>
                   <div class="count-image">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/transparent-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
-                    <img src="img/active-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="none-active-student" src="img/transparent-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
+                    <img class="active-student" src="img/active-student.png" alt="">
                   </div>
                 </div>
                 <div class="slider-item-language">
@@ -416,7 +428,19 @@
     <div class="container">
       <div class="video_wrapper">
         <div class="main_video_block">
-          <img src="img/video_photo.png" alt="">
+          <div class="main_video">
+             <div id="main_video" data-video="zzsTP4fEQHA"></div> 
+            <div class="preview-img-wrapper">
+              <div class="container-img-wrapper">
+                 <div class="video-btn-start">
+                  <img src="img/youtube-play.png" alt="">
+                </div>             
+                <div class="preview-img">
+                  <img src="https://img.youtube.com/vi/zzsTP4fEQHA/maxresdefault.jpg" alt="">
+                </div>
+              </div> 
+            </div>                  
+          </div>        
         </div>
         <div class="main_video_desc">
           <div class="main_video_desc_block">
@@ -437,31 +461,41 @@
       <div class="main_carousel_list">
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
         <div class="main_carousel_item">
           <div class="main_carousel_img">
-            <img src="img/carousel1.png" alt="">
+            <a href="img/carousel1.png">
+              <img src="img/carousel1.png" alt="">
+            </a>
           </div>
           <div class="main_carousel_item_content">Наш лучший студент, 26 декабря 2016 г.</div>
         </div>
@@ -544,7 +578,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>     
         <div class="footer_content_col back_form">
           <div class="footer_content_col_content">
             <form class="" action="index.html" method="post">
@@ -581,8 +615,8 @@
     <span class="copyright_footer_left">2017 New Life. All rights are reserved</span>
     <span class="copyright_footer_right">Website was created by North Unicorn</span>
   </div>
+  <div class="media-wrapper"></div>
 </footer>
-<div class="media-wrapper"></div>  
 <div class="modal closed modal-close" id="one">
       <div class="modal-close-btn modal-close">Выйти <img src="img/cancel-music.svg" alt="close"></div>
       <div class="modal-guts modal-close">
@@ -694,78 +728,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="js/touchSwipe.min.js"></script>
 <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.2/baguetteBox.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="js/markerwithlabel.js"></script>
 <script src="js/script.js"></script>
-<script type="text/javascript">
-  $(document).on('ready', function() {
-    $(".slider").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      respondTo: 'slider',
-      arrows: false,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            draggable: false
-          }
-        }
-      ]
-    });
-    $(".main_carousel_list").slick({
-      dots: false,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      respondTo: 'slider',
-      arrows: false,
-      responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-            }
-          }
-
-        ]      
-      // centerMode: true
-    });
-    $('.main_carousel_nav_item.prev').click(function(){
-      $(".main_carousel_list").slick('slickPrev');
-    });
-    $('.main_carousel_nav_item.next').click(function(){
-      $(".main_carousel_list").slick('slickNext');
-    });
-
-
-});
-</script>
-
-<script>
-  $(document).on('ready', function() {    
-
-    $("body").swipe( {
-
-      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        if(direction == "right"){
-          $("#nav").animate({ "left": "0" }, "slow" ).addClass("active");
-          $(".media-wrapper").addClass("dark");
-        };
-        if(direction == "left"){
-          $("#nav").removeClass("active").animate({ "left": "-50%" }, "slow" );
-          $(".media-wrapper").removeClass("dark");
-        };
-      },
-
-       threshold:0
-    });
-  });
-</script>
 </body>
 </html>
